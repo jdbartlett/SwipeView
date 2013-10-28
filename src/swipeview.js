@@ -430,6 +430,12 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 this.slider.style.left = k+"px";
               }
             }
+
+            // Browsers that lack transform capabilities
+            // need to be flipped directly
+            if (!hasTransitionEnd) {
+                this.__flip();
+            }
         },
 
         __resize: function () {
