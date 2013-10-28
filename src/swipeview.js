@@ -200,7 +200,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
             div = document.createElement('div');
             div.className = 'swipeview-slider';
-            div.style.cssText = 'position:relative;top:0;height:100%;width:100%;' +
+            div.style.cssText = 'position:relative;top:0;left:0;height:100%;width:100%;' +
                 cssVendor + 'transition-duration:0;' +
                 cssVendor + 'transform:translateZ(0);' +
                 cssVendor + 'transition-timing-function:ease-out';
@@ -429,6 +429,12 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
               else {
                 this.slider.style.left = k+"px";
               }
+            }
+
+            // Browsers that lack transform capabilities
+            // need to be flipped directly
+            if (!hasTransitionEnd) {
+                this.__flip();
             }
         },
 
