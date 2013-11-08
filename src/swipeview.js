@@ -162,6 +162,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 hastyPageFlip: false,
                 vertical: false,
                 loop: true,
+                transitionDuration: 250,
                 clientWidth: 1024,
                 clientHeight: 145
             };
@@ -633,7 +634,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
             newC = -this.page * this.pageSize;
 
-            this.slider.style[transitionDuration] = Math.floor(500 * Math.abs(this.k - newC) / this.pageSize) + 'ms';
+            this.slider.style[transitionDuration] = Math.floor(this.options.transitionDuration * Math.abs(this.k - newC) / this.pageSize) + 'ms';
 
             // Hide the next page if we decided to disable looping
             if (!this.options.loop) {
