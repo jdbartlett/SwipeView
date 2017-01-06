@@ -1,18 +1,7 @@
-SwipeView v1.0.5 - 2013-07-04
-=============================
+# Deprecated
 
-Modified version of Matteo's SwipeView which allows vertical swipe (with the `vertical` option) and also allows multiple SwipeViews in the same document:
+This fork was created to extend Firefox support to the SwipeView library for a specific project, and is not actively maintained.
 
-example: Multiple SwipeViews in the same document + vertical swipe: [http://peutetre.github.io/SwipeView/demo/gallery7/](http://peutetre.github.io/SwipeView/demo/gallery7/)
+# SwipeView
 
-Virtually infinite loop-able horizontal carousel for desktop and mobile browsers.
-
-Read more at [cubiq.org](http://cubiq.org/swipeview)
-
-Gallery Demo: [http://cubiq.org/dropbox/SwipeView/demo/gallery](http://cubiq.org/dropbox/SwipeView/demo/gallery)
-
-eReader Demo: [http://cubiq.org/dropbox/SwipeView/demo/ereader](http://cubiq.org/dropbox/SwipeView/demo/ereader)
-
-Inline Demo: [http://cubiq.org/dropbox/SwipeView/demo/inline](http://cubiq.org/dropbox/SwipeView/demo/inline)
-
-Screencast: [http://www.youtube.com/watch?v=Hhes5JHs8jQ](http://www.youtube.com/watch?v=Hhes5JHs8jQ)
+A modified version of [Matteo's SwipeView](https://cubiq.org/swipeview) which supports multiple SwipeView instances in a single document.
